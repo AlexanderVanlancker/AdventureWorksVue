@@ -1,3 +1,4 @@
+import AboutPage from "@/views/AboutPage.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import ItemList from "../views/ItemList.vue";
 
@@ -12,7 +13,7 @@ const router = createRouter({
     {
       path: "/about",
       name: "about",
-      component: ItemList,
+      component: AboutPage,
     },
   ],
 });

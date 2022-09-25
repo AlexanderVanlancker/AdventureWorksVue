@@ -1,10 +1,5 @@
 <template>
   <main>
-    <!-- <p v-for="product in products" :key="product.id">
-      <CardItem :name="product.name" :price="product.price" />
-    </p> -->
-    <v-btn color="primary"> Normal Button </v-btn>
-    <p>test</p>
     <Suspense>
       <TableFixedHeader :items="customers" />
     </Suspense>
@@ -25,8 +20,9 @@ interface Product {
 //   "http://localhost:4249/api/Product"
 // );
 // const products = productsResponse.data;
-const customersResponse = await axios.get<Array<Product>>(
-  "https://localhost:7107/api/Customer"
+const customersResponse = await axios.get<any>(
+  "https://localhost:7294/api/Employee"
 );
 const customers: Array<any> = customersResponse.data;
+console.log(customers);
 </script>
