@@ -29,7 +29,6 @@ UIkit.use(Icons);
 </template>
 
 <style>
-@import "../node_modules/uikit/src/less/uikit.less";
 #navbar ul {
   margin: 0;
   padding: 5px;
